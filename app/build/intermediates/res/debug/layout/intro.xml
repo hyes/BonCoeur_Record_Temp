@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="1"
+    >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/imageView2"
+    android:src="@drawable/heart"
+    android:layout_weight="0.7"
+    android:layout_gravity="center" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.2"
+    android:paddingTop="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text="@string/intro"
+        android:id="@+id/intro"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+</ScrollView>
+
+<Button
+    android:layout_width="200dp"
+    android:layout_height="0dp"
+    android:text="START"
+    android:id="@+id/button"
+    android:layout_gravity="center_horizontal|bottom"
+    android:textSize="28dp"
+    android:textColor="#0D415E"
+    android:textStyle="bold"
+    android:onClick="onButton1Clicked"
+    android:background="#EbF0F3"
+    android:layout_margin="10dp"
+    android:layout_weight="0.1" />
+</LinearLayout><!-- From: file:/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/src/main/res/layout/intro.xml -->

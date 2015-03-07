@@ -1,0 +1,5 @@
+/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/build/intermediates/classes/debug
+/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-0ce3c52bac3172ca13f5ea981cc7b869e7301eeb.jar
+/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-ebdeadd5acc6d2d07f822ab4bed4623db2b62b2b.jar
+/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/build/intermediates/pre-dexed/debug/classes-fa946f6d54a1bdea351e09b9a7f940df051a6d2e.jar
+/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/build/intermediates/pre-dexed/debug/classes-0135e1f9c7e3d26d763a610fffd46be24717a327.jar

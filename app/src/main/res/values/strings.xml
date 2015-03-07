@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyRecord_BC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro">  BonCoeur 소개 및 BonCouer가 제공하는 서비스, 사용방법에 대한 image+text 설명</string>
+    <string name="login1">Please sign into your account</string>
+    <string name="login2">Access your account and help children in need</string>
+    <string name="register1">New to BonCoeur service?</string>
+    <string name="register2">Please fill the form below</string>
+    <string name="register_button">Create account</string>
+    <string name="title_activity_ending">Ending</string>
+    <string name="ending_text">Your request has been successfully submitted</string>
+
+</resources>
