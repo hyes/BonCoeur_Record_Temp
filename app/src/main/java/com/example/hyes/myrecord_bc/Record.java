@@ -12,6 +12,7 @@ import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
+import android.media.audiofx.Visualizer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -29,6 +30,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -46,6 +48,8 @@ public class Record extends ActionBarActivity {
     ImageView pic_frame;
     private int idx=0;
 
+    String name;
+
 
 
     @Override
@@ -54,9 +58,13 @@ public class Record extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record);
 
+        Intent intent = getIntent();
+        name =  intent.getStringExtra("name");
+
         ImageButton record_btn = (ImageButton) findViewById(R.id.record);
         ImageButton play_btn = (ImageButton) findViewById(R.id.play);
         ImageButton stop_btn = (ImageButton) findViewById(R.id.stop);
+
         timestamp = new SimpleDateFormat("yyyyMMddHHmmss");
 
         final ImageButton cam_capture = (ImageButton) findViewById(R.id.capture);
@@ -64,11 +72,11 @@ public class Record extends ActionBarActivity {
 
         FrameLayout previewFrame = (FrameLayout) findViewById(R.id.previewFrame);
         previewFrame.addView(cameraView);
-        Log.i("test", "asasasasasasas");
 
         pic_frame = (ImageView) findViewById(R.id.pic);
         Button next_button = (Button) findViewById(R.id.next_button);
         final TextView step = (TextView) findViewById(R.id.step);
+        step.setText(name + " STEP1");
 
 
         //record
@@ -140,6 +148,29 @@ public class Record extends ActionBarActivity {
                     Log.i("SampleAudioRecorder", "Audio insert failed");
                     return;
                 }
+
+                killMediaPlayer();
+
+                try {
+                    player = new MediaPlayer();
+                    player.setDataSource(RECORDED_FILEPATH + fileName);
+                    player.prepare();
+                    player.start();
+                    byte[] b = new byte[ 1024 ];
+                    for( int ii = 0; ii < 10; ii++) {
+                        Visualizer visualizer = new Visualizer(player.getAudioSessionId());
+                        visualizer.setEnabled(true);
+                        visualizer.getWaveForm(b);
+                        visualizer.setCaptureSize(b[0]);
+
+                        Log.i("test",ii + "");
+                        Log.i("test", "" + b[0] + "," + b[1] + "," + b[2] + "," + b[3] + "," + b[4] + "," + b[5] + "," + b[6] );
+                        player.seekTo( ( ii * 1024 * 1000 / 44100  ) );
+                        visualizer.release();
+                    }
+                }catch(IOException e){
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -150,18 +181,18 @@ public class Record extends ActionBarActivity {
 
                 if (idx == 0) {
                     Toast.makeText(getApplicationContext(), "다음 단계로 이동합니다", Toast.LENGTH_SHORT).show();
-                    step.setText("STEP 2");
+                    step.setText(name + "STEP 2");
                     pic_frame.setImageBitmap(null);
                     //                    pic_frame.setImageDrawable(res.getDrawable(R.drawable.shutter));
                     idx += 1;
                 } else if (idx == 1) {
 
-                    step.setText("STEP 3");
+                    step.setText(name + "STEP 3");
                     pic_frame.setImageBitmap(null);
                     idx += 1;
                 } else if (idx == 2) {
 
-                    step.setText("STEP 4");
+                    step.setText(name + "STEP 4");
                     pic_frame.setImageBitmap(null);
                     idx += 1;
                 } else if (idx == 3) {
@@ -217,7 +248,7 @@ public class Record extends ActionBarActivity {
                                 Log.i("title test", outUriStr);
                                 sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, outUri));
 
-                                //changeUri(outUriStr);
+                                changeUri(outUriStr);
                             }
 
 //                            Toast.makeText(getApplicationContext(), "카메라로 찍은 사진을 앨범에 저장했습니다.", Toast.LENGTH_LONG).show();
@@ -287,6 +318,7 @@ public class Record extends ActionBarActivity {
 //            List<Camera.Size> previewSizes = parameters.getSupportedPreviewSizes();
             Camera.Size s = parameters.getSupportedPreviewSizes().get(0);
             parameters.setPreviewSize(s.width, s.height);
+
 
             camera.setParameters(parameters);
             camera.setDisplayOrientation(90);

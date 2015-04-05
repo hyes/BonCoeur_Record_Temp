@@ -174,7 +174,7 @@
     <string name="title_activity_ending">Ending</string>
     <!-- From: file:/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/src/main/res/values/styles.xml -->
     <eat-comment/>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
     </style>
     <!-- From: file:/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->

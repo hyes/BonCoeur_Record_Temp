@@ -34,42 +34,38 @@ ADDED from AndroidManifest.xml:12:5
 	android:name
 		ADDED from AndroidManifest.xml:12:22
 application
-ADDED from AndroidManifest.xml:14:5
+ADDED from AndroidManifest.xml:15:5
 MERGED from com.android.support:appcompat-v7:21.0.3:16:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
-		ADDED from AndroidManifest.xml:17:9
-	android:allowBackup
-		ADDED from AndroidManifest.xml:15:9
-	android:icon
-		ADDED from AndroidManifest.xml:16:9
-	android:theme
 		ADDED from AndroidManifest.xml:18:9
-activity#com.example.hyes.myrecord_bc.MainActivity
-ADDED from AndroidManifest.xml:19:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:16:9
+	android:icon
+		ADDED from AndroidManifest.xml:17:9
+	android:theme
+		ADDED from AndroidManifest.xml:19:9
+activity#com.example.hyes.myrecord_bc.Intro
+ADDED from AndroidManifest.xml:20:9
 	android:label
+		ADDED from AndroidManifest.xml:22:13
+	android:name
 		ADDED from AndroidManifest.xml:21:13
-	android:name
-		ADDED from AndroidManifest.xml:20:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:22:13
+ADDED from AndroidManifest.xml:23:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:23:17
+ADDED from AndroidManifest.xml:24:17
 	android:name
-		ADDED from AndroidManifest.xml:23:25
+		ADDED from AndroidManifest.xml:24:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:25:17
+ADDED from AndroidManifest.xml:26:17
 	android:name
-		ADDED from AndroidManifest.xml:25:27
+		ADDED from AndroidManifest.xml:26:27
 activity#com.example.hyes.myrecord_bc.Login
-ADDED from AndroidManifest.xml:28:9
-	android:name
-		ADDED from AndroidManifest.xml:28:19
-activity#com.example.hyes.myrecord_bc.Record
 ADDED from AndroidManifest.xml:29:9
 	android:name
 		ADDED from AndroidManifest.xml:29:19
-activity#com.example.hyes.myrecord_bc.Record2
+activity#com.example.hyes.myrecord_bc.Record
 ADDED from AndroidManifest.xml:30:9
 	android:name
 		ADDED from AndroidManifest.xml:30:19
@@ -77,6 +73,14 @@ activity#com.example.hyes.myrecord_bc.Ending
 ADDED from AndroidManifest.xml:31:9
 	android:name
 		ADDED from AndroidManifest.xml:31:19
+activity#com.example.hyes.myrecord_bc.SelectionMenu
+ADDED from AndroidManifest.xml:32:9
+	android:name
+		ADDED from AndroidManifest.xml:32:19
+activity#com.example.hyes.myrecord_bc.RecordTargetInfo
+ADDED from AndroidManifest.xml:33:9
+	android:name
+		ADDED from AndroidManifest.xml:33:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:21.0.3:15:5

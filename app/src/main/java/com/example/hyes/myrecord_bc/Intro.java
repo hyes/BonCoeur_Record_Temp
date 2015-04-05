@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends ActionBarActivity {
+public class Intro extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), SelectionMenu.class);
                 startActivity(intent);
             }
         });

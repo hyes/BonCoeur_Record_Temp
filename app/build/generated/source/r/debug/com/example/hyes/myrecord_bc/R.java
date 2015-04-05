@@ -1299,11 +1299,12 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int heart=0x7f020033;
-        public static final int ic_launcher=0x7f020034;
-        public static final int progress=0x7f020035;
-        public static final int shutter=0x7f020036;
-        public static final int stethoscope=0x7f020037;
+        public static final int customize_button_basic=0x7f020033;
+        public static final int heart=0x7f020034;
+        public static final int ic_launcher=0x7f020035;
+        public static final int progress=0x7f020036;
+        public static final int shutter=0x7f020037;
+        public static final int stethoscope=0x7f020038;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -1319,7 +1320,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080059;
+        public static final int action_settings=0x7f080060;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
@@ -1362,6 +1363,8 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
         public static final int record=0x7f080053;
+        public static final int record_btn=0x7f08005e;
+        public static final int record_textView=0x7f08005f;
         public static final int register1=0x7f080048;
         public static final int register2=0x7f080049;
         public static final int register_button=0x7f08004e;
@@ -1379,18 +1382,23 @@ containing a value of this type.
         public static final int search_plate=0x7f080039;
         public static final int search_src_text=0x7f08003a;
         public static final int search_voice_btn=0x7f08003e;
+        public static final int send_btn=0x7f08005d;
+        public static final int send_textView=0x7f08005c;
         public static final int shortcut=0x7f08002a;
         public static final int showCustom=0x7f08000f;
         public static final int showHome=0x7f080010;
         public static final int showTitle=0x7f080011;
         public static final int split_action_bar=0x7f080007;
+        public static final int start_btn=0x7f08005b;
         public static final int step=0x7f08004f;
         public static final int stop=0x7f080054;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
+        public static final int target_name=0x7f08005a;
         public static final int textView=0x7f080040;
         public static final int textView2=0x7f080057;
         public static final int textView3=0x7f080055;
+        public static final int textView4=0x7f080059;
         public static final int title=0x7f080027;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
@@ -1428,7 +1436,9 @@ containing a value of this type.
         public static final int intro=0x7f030018;
         public static final int login=0x7f030019;
         public static final int record=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int record_target_info=0x7f03001b;
+        public static final int selection_menu=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int menu_ending=0x7f0c0000;
