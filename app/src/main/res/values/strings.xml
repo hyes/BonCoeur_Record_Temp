@@ -12,5 +12,8 @@
     <string name="register_button">Create account</string>
     <string name="title_activity_ending">Ending</string>
     <string name="ending_text">Your request has been successfully submitted</string>
+    <string name="ending_text2">Your device is not connected to a network. Please try sending data again later when the Internet available.  </string>
+    <string name="record_info">레코드 선택시 30초 동안 녹음되고 자동 종료</string>
+
 
 </resources>
