@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/name_tv"
+            android:textSize="14dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:text="name" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/date_tv"
+            android:textSize="14dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:text="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/rec1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#424242"
+            android:layout_weight="1"
+            android:text="rec1_tv" />
+
+        <TextView
+            android:id="@+id/rec2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#424242"
+            android:layout_weight="1"
+            android:text="rec2_tv" />
+
+        <TextView
+            android:id="@+id/rec3_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#0D415E"
+            android:layout_weight="1"
+            android:text="rec3_tv" />
+
+        <TextView
+            android:id="@+id/rec4_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#0D415E"
+            android:layout_weight="1"
+            android:text="rec4_tv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/pic1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#424242"
+            android:layout_weight="1"
+            android:text="pic1" />
+
+        <TextView
+            android:id="@+id/pic2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#424242"
+            android:layout_weight="1"
+            android:text="pic2_tv" />
+
+        <TextView
+            android:id="@+id/pic3_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#0D415E"
+            android:layout_weight="1"
+            android:text="rec3_tv" />
+
+        <TextView
+            android:id="@+id/pic4_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="14dp"
+            android:textColor="#0D415E"
+            android:layout_weight="1"
+            android:text="pic4" />
+    </LinearLayout>
+
+</LinearLayout>

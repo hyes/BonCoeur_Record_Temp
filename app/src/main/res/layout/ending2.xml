@@ -22,7 +22,6 @@
         android:textSize="24dp"
         android:textColor="#0D415E"
         android:textStyle="bold"
-        android:text=" 추가 안내문구~"
         android:id="@+id/textView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"

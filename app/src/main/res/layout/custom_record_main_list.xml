@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recordDataList"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="name"
+            android:id="@+id/name"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#424242" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="STEP1"
+            android:textSize="20dp"
+            android:textColor="#ef7834"
+            android:layout_weight="1"
+            android:gravity="center"
+             />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cap1"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:rotation="90"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/audio1"
+            android:layout_weight="0.4"
+            android:background="@drawable/customize_button_play"
+            android:text="play"
+            android:textSize="10dp"
+            android:onClick="Play1Clicked" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:id="@+id/step1"
+            android:layout_weight="1"
+            android:onClick="OnButton1Clicked"
+            android:background="@drawable/customize_button_revise"
+            android:layout_marginLeft="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="STEP2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ef7834"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cap2"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:rotation="90"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/audio2"
+            android:layout_weight="0.4"
+            android:background="@drawable/customize_button_play"
+            android:text="play"
+            android:textSize="10dp"
+            android:onClick="Play2Clicked" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:id="@+id/step2"
+            android:layout_weight="1"
+            android:onClick="OnButton2Clicked"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/customize_button_revise"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="STEP3"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ef7834"
+            android:layout_weight="1"
+             />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cap3"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:rotation="90"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:id="@+id/audio3"
+            android:layout_weight="0.4"
+            android:background="@drawable/customize_button_play"
+            android:textSize="10dp"
+            android:onClick="Play3Clicked" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:id="@+id/step3"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button_revise"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="STEP4"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ef7834"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cap4"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:rotation="90"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:id="@+id/audio4"
+            android:layout_weight="0.4"
+            android:background="@drawable/customize_button_play"
+            android:textSize="10dp"
+            android:onClick="Play4Clicked" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:id="@+id/step4"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button_revise"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="optional"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ef7834"
+            android:layout_weight="1"
+             />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cap5"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:rotation="90"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:id="@+id/audio5"
+            android:layout_weight="0.4"
+            android:background="@drawable/customize_button_play"
+            android:textSize="10dp"
+            android:onClick="Play5Clicked" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:id="@+id/step5"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button_revise"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="optional"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ef7834"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cap6"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:rotation="90"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:id="@+id/audio6"
+            android:layout_weight="0.4"
+            android:background="@drawable/customize_button_play"
+            android:textSize="10dp"
+            android:onClick="Play6Clicked" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:id="@+id/step6"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button_revise"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/send_btn"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/customize_button_basic"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

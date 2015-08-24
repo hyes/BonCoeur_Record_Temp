@@ -163,16 +163,18 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">MyRecord_BC</string>
+    <string name="boncoeur">BonCoeur is designed for children with Rheumatic heart disease (RHD) especially in developing countries. BonCoeur service is intended to help making correct diagnoses without doctor\'s visit. Just record heart sounds and take pictures. Professional physicians will make a diagnosis for you in no time.</string>
+    <string name="confirm_email">BonCoeur will send you the result by email.</string>
     <string name="ending_text">Your request has been successfully submitted</string>
-    <string name="ending_text2">Your device is not connected to a network. Please try sending data again later when the Internet available.  </string>
+    <string name="ending_text2">Your device is not connected to a network. Please try sending data again later when the Internet is available.(Main page > SEND menu > choose the name you recorded before)  </string>
     <string name="hello_world">Hello world!</string>
     <string name="intro">  BonCoeur 소개 및 BonCouer가 제공하는 서비스, 사용방법에 대한 image+text 설명</string>
     <string name="login1">Please sign into your account</string>
     <string name="login2">Access your account and help children in need</string>
-    <string name="record_info">레코드 선택시 30초 동안 녹음되고 자동 종료</string>
+    <string name="record_info">click "Record", recording will automatically start and stop in 30 seconds.</string>
     <string name="register1">New to BonCoeur service?</string>
     <string name="register2">Please fill the form below</string>
-    <string name="register_button">Create account</string>
+    <string name="submit_button">SUBMIT</string>
     <string name="title_activity_ending">Ending</string>
     <!-- From: file:/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/src/main/res/values/styles.xml -->
     <eat-comment/>

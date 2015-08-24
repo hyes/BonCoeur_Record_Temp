@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.List;
-
 /**
  * Created by hyes on 2015. 3. 1..
  */
@@ -39,8 +37,8 @@ public class Login extends ActionBarActivity{
 
                    Toast.makeText(getApplicationContext(), "등록된 회원이 맞는지 확인 후 진행~", Toast.LENGTH_SHORT).show();
 
-
-                       Intent intent = new Intent(getApplicationContext(), Record.class);
+                    //  Intent intent = new Intent(getApplicationContext(), Record.class);
+                       Intent intent = new Intent(getApplicationContext(), List.class);
                        startActivity(intent);
                        Toast.makeText(getApplicationContext(), "등록된 회원이 맞는지 확인 후 진행~", Toast.LENGTH_SHORT).show();
 
@@ -66,7 +64,7 @@ public class Login extends ActionBarActivity{
                        if(pwd1.equals(pwd2)){
 
                            Toast.makeText(getApplicationContext(), "회원가입처리 후~", Toast.LENGTH_SHORT).show();
-                           Intent intent = new Intent(getApplicationContext(), List.class);
+                           Intent intent = new Intent(getApplicationContext(), Ending.class);
                            startActivity(intent);
 
                        } else {

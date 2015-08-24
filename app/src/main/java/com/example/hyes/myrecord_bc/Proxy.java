@@ -15,7 +15,13 @@ public class Proxy {
     public String getJson(){
 
         try{
-            URL url = new URL("http://192.168.56.1:5009/loadData");
+//            URL url = new URL("http://127.0.0.1:8899/loadData");
+           //URL url = new URL("http://192.168.56.1:8899/loadData");
+            URL url = new URL("Http://147.47.34.31:8000/submit");
+//            URL url = new URL("http://10.73.39.201:8899/loadData");
+           // URL url = new URL("http:// 172.30.52.215:8899/loadData");
+
+
 
 //			URL url = new URL("http://54.64.250.239:5009/loadData");
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();

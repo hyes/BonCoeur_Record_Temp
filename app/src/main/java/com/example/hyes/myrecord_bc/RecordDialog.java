@@ -20,8 +20,7 @@ public class RecordDialog extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final ProgressDialog dialog = ProgressDialog.show(getActivity(), "Recording now...", " recording will automatically end after 30 seconds", true);
 
-
-
+      //  dialog.setCancelable(false);
         long delayInMillis = 5000;
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {

@@ -80,16 +80,19 @@
             <ImageButton
                 android:id="@+id/stop"
                 android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:src="@drawable/stop"
-                android:background="@drawable/button_round" />
+                android:background="@drawable/button_round"
+                android:layout_weight="3" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:text="STOP"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textSize="10dp"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -103,17 +106,19 @@
             <ImageButton
                 android:id="@+id/pause"
                 android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:src="@drawable/pause"
                 android:layout_gravity="center"
-                android:background="@drawable/button_round" />
+                android:background="@drawable/button_round"
+                android:layout_weight="3" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:text="Pause"
                 android:id="@+id/textView1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,17 +131,19 @@
             <ImageButton
                 android:id="@+id/play"
                 android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:src="@drawable/start"
                 android:layout_gravity="center"
-                android:background="@drawable/button_round" />
+                android:background="@drawable/button_round"
+                android:layout_weight="3" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:text="Play"
                 android:id="@+id/textView2"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -152,14 +159,16 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/record"
                 android:layout_gravity="center"
-                android:background="@drawable/button_round" />
+                android:background="@drawable/button_round"
+                android:layout_weight="3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Record"
                 android:id="@+id/textView3"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
         </LinearLayout>
 
     </LinearLayout>
@@ -168,14 +177,15 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1" >
+        android:layout_weight="0.05" >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/record_info"
             android:id="@+id/record_info"
-            android:gravity="right|top" />
+            android:gravity="right|top"
+            android:layout_marginTop="4dp" />
 
     </LinearLayout>
 
@@ -195,18 +205,38 @@
 
         </LinearLayout>
 
-        <Button
-            android:layout_width="240dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:text="NEXT"
-            android:id="@+id/next_button"
-            android:layout_gravity="center"
-            android:textSize="28dp"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-
             android:layout_weight="0.2"
-            android:background="@drawable/customize_button_basic"/>
+            android:gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="CANCEL"
+                android:id="@+id/cancel_btn"
+                android:layout_gravity="center"
+                android:textSize="28dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/customize_button_basic"
+                android:layout_marginRight="20dp" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="NEXT"
+                android:id="@+id/next_button"
+                android:layout_gravity="center"
+                android:textSize="28dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+
+                android:background="@drawable/customize_button_basic"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout><!-- From: file:/Users/hyes/AndroidStudioProjects/MyRecord_BC/app/src/main/res/layout/record.xml -->

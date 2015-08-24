@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical">
+        <!--android:background="#EAF1Fc"-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_email"
+
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#0D415E"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register2"
+            android:id="@+id/register2"
+            android:layout_margin="2dp"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:id="@+id/register_email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="Your email"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:id="@+id/register_email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="Confirm email"
+            android:layout_margin="5dp" />
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:id="@+id/submit_button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onButton2Clicked"
+            android:background="@drawable/customize_button_basic"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>
